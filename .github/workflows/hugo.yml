@@ -21,32 +21,38 @@ defaults:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-    # HUGO_VERSION کو اپنی ضرورت کے مطابق سیٹ کر سکتے ہیں
-      HUGO_VERSION: '0.161.1' 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Tailwind CSS CLI
+        run: npm install -g @tailwindcss/cli tailwindcss
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '${{ env.HUGO_VERSION }}'
+          hugo-version: '0.161.1'
           extended: true
-      - name: Install Tailwind CSS
-        run: npm install -g tailwindcss @tailwindcss/cli
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
+
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
-          TZ: Asia/Kolkata
         run: |
           hugo \
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
