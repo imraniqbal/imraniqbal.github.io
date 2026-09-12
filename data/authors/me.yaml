@@ -1,0 +1,111 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: Imran Iqbal
+  given: Imran
+  family: Iqbal
+  alternate: ''  # Example: 王伟
+  pronunciation: ''  # Example: Wáng Wěi
+  pronouns: he/him
+postnominals:
+  - PhD
+  - MIEEE
+status:
+  icon: "☕️"
+role: Data Analyst
+bio: |
+  Imran Iqbal is a Data Analyst with expertise in statistical analysis and data visualization. His work focuses on extracting insights from complex datasets to inform business decisions.
+
+affiliations:
+  - name: Meta AI
+    url: https://ai.meta.com/
+
+links:
+  - icon: at-symbol
+    url: mailto:alimran.iqbal@gmail.com
+    label: E-mail Me
+  - icon: brands/github
+    url: https://github.com/imraniqbal
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/example/
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=example
+  - icon: academicons/orcid
+    url: https://orcid.org/0000-0002-1825-0097
+
+interests:
+  - Large Language Models
+  - Computer Vision
+  - Reinforcement Learning
+  - AI Ethics
+
+education:
+  - degree: M.Sc. Mathematics
+    institution: University of the Punjab, Lahore
+    start: 2007-09-01
+    end: 2009-06-30
+  - degree: M.Sc. Applied Physics
+    institution: FUUAST, Islamabad
+    start: 2011-09-01
+    end: 2013-06-30   
+    summary: |
+      SU(2) Group and its applications in Quantum Mechanics. Focused on the mathematical structures underlying quantum systems and their physical interpretations.
+    button:
+      text: Download dissertation
+      url: /resume.pdf
+      icon: hero/arrow-down-tray
+  - degree: B.Sc. Mathematics and Physics
+    institution: Gordon College, Rawalpindi
+    start: 2005-09-01
+    end: 2007-07-31
+
+experience:
+  - role: Senior AI Research Scientist
+    org: Meta AI
+    start: 2020-01-01
+    summary: |
+      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models.
+    button:
+      text: View portfolio
+      url: /
+      icon: hero/arrow-down-tray
+  - role: AI Research Intern
+    org: OpenAI
+    start: 2019-06-01
+    end: 2019-12-31
+    summary: |
+      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
+
+skills:
+  - name: Technical Skills
+    items:
+      - label: Python
+        level: 5
+      - label: Machine Learning
+        level: 5
+      - label: Cloud Computing
+        level: 4
+  - name: Research & Communication
+    items:
+      - label: Academic Writing
+        level: 5
+      - label: Conference Presentations
+        level: 4
+      - label: Grant Proposals
+        level: 4
+
+languages:
+  - name: Urdu,Punjabi
+    level: 5
+    label: Native
+  - name: English
+    level: 4
+    label: Fluent
+
+awards:
+  - title: Best Paper Award
+    awarder: NeurIPS
+    date: "2022-12-01"
+    summary: Awarded for groundbreaking work on efficient training of large models.
+    icon: hero/trophy
